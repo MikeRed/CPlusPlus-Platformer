@@ -116,7 +116,7 @@ void Game::ComposeFrame()
 			if (bX + 2 <= gfx.ScreenWidth - 1)
 			{
 				DrawBullet(bX, bY, bulletDirection);
-				bX += 3;
+				bX += 8;
 			}
 
 			else
@@ -127,7 +127,7 @@ void Game::ComposeFrame()
 			if (bX - 2 >= 1)
 			{
 				DrawBullet(bX, bY, bulletDirection);
-				bX -= 3;
+				bX -= 8;
 			}
 			else
 				bulletIsFired = false;
